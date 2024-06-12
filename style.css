@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  color: #224065;
+}
+.heading::after {
+  content: "";
+  width: 4%;
+  height: 3px;
+  background-color: #cb9a60;
+  position: absolute;
+  left: 48%;
+  bottom: 15%;
+}
+
+.topnav button {
+  background-color: #fff;
+  cursor: pointer;
+  color: #cb9a60;
+  text-align: center;
+  padding: 3px 12px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: #cb9a60 #634a2b #634a2b #cb9a60;
+  text-transform: capitalize;
+}
+.topnav {
+  margin-bottom: 70px;
+}
+/* .topnav button:hover {
+  color: #224065;
+  border: 2px solid #224065;
+} */
+/* button:focus {
+  background-color: #224065;
+  border: 2px solid #224065;
+  color: #fff;
+  transition: 0.3s ease;
+} */
+button.design {
+  background-color: #224065;
+  border: 2px solid #224065;
+  color: #fff;
+  transition: 0.3s ease;
+}
+#root {
+  padding: 0 40px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+.image img {
+  width: 90%;
+  height: 30vh;
+  border-radius: 7px;
+  border: 3px solid #cb9a60;
+  cursor: pointer;
+}
+
+.title-head {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.description {
+  text-align: left;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.price {
+  text-align: right;
+  color: #cb9a60;
+}
+.title {
+  text-align: left;
+  color: #224065;
+}
+.ending-space {
+  padding-right: 20px;
+}
+.top {
+  margin: 10px 0 40px 0;
+}
+.footer-div {
+  height: 10px;
+  background-color: #224065;
+}
+footer {
+  color: #ccc;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .heading::after {
+    width: 10%;
+    left: 45%;
+  }
+  .topnav button {
+    font-size: 14px;
+  }
+  .column {
+    float: none;
+    width: 100%;
+  }
+  .image img {
+    width: 70%;
+  }
+  .ending-space {
+    padding-right: 0;
+  }
+  .description {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .image {
+    float: none;
+    width: 100%;
+  }
+  #root {
+    padding: 0 20px;
+  }
+  .ending-space {
+    padding-right: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #root {
+    padding: 0 10px;
+  }
+  .description {
+    font-size: 12px;
+  }
+}
