@@ -246,7 +246,3 @@ const displayAllArray = (allArrayMap) => {
     .join("");
   root.innerHTML = displayAll;
 };
-// const footerData = document.querySelector(".footer");
-// const date = new Date().getFullYear();
-// const showDate = `<p>paulakhere48@gmail.com ${date}</p>`;
-// footerData.innerHTML = showDate;
